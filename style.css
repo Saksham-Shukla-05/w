@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #212122;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#dab7a0,#877cc6);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius:20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.city{
+    margin-top: 12px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius:30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;   
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 200;
+    margin-top: -10px;
+}
+.weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:0 20px;
+    margin-top: 50px;
+    /* border: 2px solid red; */
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    /* gap: 5rem; */
+}
+
+.details{
+    display: flex;
+    gap: 2rem;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,.Wind,.Sunrise,.Sunset{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.time{
+    font-size: 28px;
+    font-weight: 900;
+}
+.Sunset{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cFlag{
+    width: 30px;
+    height: 30px;
+}
+@media (width<=475px) {
+    .search input{
+        width: 50px;
+        font-size: 15px;
+    }
+    .humidity,.Wind,.Sunrise,.Sunset,.time{
+        font-size: 20px;
+    }
+    .weather h1,.weather h2{
+        font-size: 50px;
+    }
+    .weather h1{
+        margin-top: 30px;
+    }
+}
+.red-placeholder::placeholder {
+    color: #414141; 
+    font-weight: 900;
+}
